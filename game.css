@@ -1,0 +1,201 @@
+       
+       body, html {
+        background-color: #2c2c2c; 
+        color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        height: 100vh;
+        }
+
+
+        .main-content {
+        position: relative;
+        width: 640px; 
+        height: 640px;
+        background-image: url('/images/체스판만.jpg');
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        margin-left:100px;
+        margin-top:53px;
+        }
+
+
+        .main-content img{
+            cursor: pointer;
+        }
+
+
+        /**/
+        .bottomPawn {
+            position: absolute;
+            width: 33px; 
+            height: auto;
+            bottom:123px;
+        }
+
+
+        .otherBottom {
+            position: absolute;
+            width: 33px; 
+            height: auto;
+            bottom: 55px;
+        }
+
+        .otherTop {
+            position: absolute;
+            width: 31px; 
+            height: auto;
+            bottom:505px;
+        }
+
+
+        .topPawn {
+            position: absolute;
+            width: 33px;
+            height: auto;
+            top:90px;
+        }
+
+
+
+        /*  sidebar  */
+       .sidebar {
+            background-color: #202020;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+
+
+        .sidebar-links, .sidebar-bottom {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .sidebar-bottom {
+            margin-top: auto; 
+            padding-bottom: 20px;
+        }
+
+
+
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #9e9e9e;
+            display: block;
+            transition: 0.3s;
+        }
+
+
+
+        .sidebar a.active,
+        .sidebar a:hover {
+            background-color: #4f1919;; 
+            color: white;
+        }
+
+        .sidebar-icon {
+            width: 25px; 
+            height: 25px; 
+            vertical-align: middle; 
+            margin-right: 5px;
+        }
+
+
+        .yourProfile {
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+          position: absolute;
+          top: -45px; 
+          left: 18%;
+          transform: translateX(-50%);
+          text-decoration: none; 
+          color: inherit; 
+        }
+
+        .yourProfile img {
+          width: 40px; 
+          height: auto; 
+          margin-right: 10px; 
+        }
+
+
+        .myProfile {
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+          position: absolute;
+          bottom: -45px; 
+          left: 18%; 
+          transform: translateX(-50%); 
+          text-decoration: none; 
+          color: inherit; 
+        }
+
+        .myProfile img {
+          width: 40px; 
+          height: auto; 
+          margin-right: 10px; 
+        }
+
+
+        .game-controls {
+            position: absolute;
+            right: -330px; 
+            bottom: -20px; 
+            display: flex;
+            padding: 20px;
+            gap: 10px; 
+        }
+
+        .game-controls button {
+            margin: 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+
+
+        #startGame {
+            background-color: #4CAF50; 
+            color: white;
+        }
+
+        #startGame:hover {
+            background-color: #45a049; 
+        }
+
+        #endGame {
+            background-color: #f44336; 
+            color: white;
+        }
+
+        #endGame:hover {
+            background-color: #d7382b; 
+        }
+
+        .timer {
+            position: absolute;
+            top: 85px;
+            right: -325px; 
+            transform: translateY(-50%);
+            background-color: #333; 
+            color: white; 
+            font-size: 24px; 
+            padding: 70px 100px 70px 100px; 
+            border-radius: 10px; 
+            font-family: 'Arial', sans-serif; 
+        }
